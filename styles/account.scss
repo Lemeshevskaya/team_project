@@ -1,0 +1,104 @@
+.account__info-about {
+    height: 406px;
+    width: 100%;
+    background-color: $white-color;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+.account__activity {
+    height: calc(100% - 406px);
+    background-color: $background_color;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+.account__cross {
+    background: url("../img/account/activity/picCross.png") no-repeat right / contain;
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    margin-top: 19px;
+    float: right;
+    margin-right: 19px;
+}
+.account__pictures {
+    position: absolute;
+    height: 196px;
+    width: 196px;
+    border-radius: 50%;
+    background: url("../img/account/pictures/EmilyBlunt1.jpg") no-repeat center / cover;
+    left:calc(50% - 90px);
+    top: 50px;
+}
+.account__pictures:before {
+    content: '';
+    height: calc(100% + 2px);
+    width: calc(100% + 2px);
+    border: 7px solid #c8d5de;
+    border-radius: 50%;
+    position: absolute;
+    left:-1px;
+    top: -1px;
+}
+.account__text {
+    text-align: center;
+}
+.account__name {
+    font-family: "Open Sans Light",sans-serif;
+    font-size: 36px;
+    padding-top: 275px;
+}
+.account__text-about-people {
+    display: inline-block;
+    font-family: "Open Sans Light",sans-serif;
+    font-size: 14px;
+    margin-top: 7px;
+    box-sizing: border-box;
+    width: 215px;
+}
+.account_column {
+    float: left;
+    width: calc(100%/3);
+    height: 100%;
+    color: $white-color;
+}
+.account_column:nth-child(-n+2) {
+    background:linear-gradient(to right, transparent 99%, $background_color, 1%);
+}
+.account__number:before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url("../img/account/activity/picSpryt.png") no-repeat;
+    cursor: pointer;
+    left: -45px;
+    top: -5px;
+}
+.account__number-comments:before {
+    background-position: -15px -20px;
+}
+.account__number-like:before {
+    background-position: -71px -20px;
+}
+.account__number-favorite:before {
+    background-position: -127px -20px;
+}
+.account__number {
+    position: relative;
+    display: inline-block;
+    font-family: "Open Sans SemiBold",sans-serif;
+    font-size: 14px;
+    color: $white-color;
+    margin-left: 64px;
+    margin-top: 20%;
+    user-select: none;
+}
+.choice.active {
+    color: $light-blue;
+}
+.account__number-like.active:before {
+    background-position: -179px -20px;
+}
+.account__number-favorite.active:before {
+    background-position: -226px -20px;
+}

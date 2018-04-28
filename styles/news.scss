@@ -1,0 +1,53 @@
+.news__area {
+    padding: 30px;
+}
+.news__area_latest {
+    color: $background_color;
+    font-size: 30px;
+    display: inline;
+    padding-right: 70px;
+    font-family: "Open Sans Light",sans-serif;
+}
+.news__radio_buttons {
+    float: right;
+    display: inline-block;
+}
+.news__area_content {
+    color: $light-blue;
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+.news__area_author {
+    color: #79808a;
+    font-size: 14px;
+    font-family: "Open Sans Light",sans-serif;
+}
+.news__tab_row {
+    padding-bottom: 40px;
+}
+.news__tab{
+    padding:30px 12px 12px 0;
+    color:#444;
+    display: none;
+}
+.news__img {
+    float: left;
+    margin-right: 20px;
+    width: 61px;
+    height: 61px;
+}
+.news__link {
+    text-decoration: none;
+    color: $light-blue;
+    font-family: "Open Sans Light",sans-serif;
+}
+.news__link:hover {
+    color: #808000;
+}
+.news__input-1:checked ~ .tab1,
+.news__input-2:checked ~ .tab2,
+.news__input-3:checked ~ .tab3,
+.news__input-4:checked ~ .tab4{
+    display: block;
+}
+

@@ -1,0 +1,196 @@
+$white-color: #fff;
+$light-blue: #17c4bb;
+$background_color: #2d3e58;
+$dark-blue: #485a76;
+
+@import "account.scss";
+@import "friends.scss";
+@import "menu.scss";
+@import "news.scss";
+@import "reset";
+@import "settings.scss";
+@import "singin.scss";
+@import "subacribe.scss";
+@import "upload.scss";
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/Open_Sans/OpenSans-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Open Sans Light";
+    src: url("../fonts/Open_Sans/OpenSans-Light.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Open Sans SemiBold";
+    src: url("../fonts/Open_Sans/OpenSans-SemiBold.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.wrapper {
+    width: 100%;
+    max-width: 1429px;
+    min-height: 1015px;
+    display: grid;
+    grid-template-columns: 28.691% 24.423% 25.892%;
+    grid-template-rows: 63px 159px 262px 7px 224px;
+    grid-template-areas:
+            "menu menu menu"
+            "diagram account subscribe"
+            "diagram account signin"
+            "news upload ."
+            "news upload friends ";
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    justify-content: center;
+    align-content: center;
+    background: url("../img/settings/background.png") no-repeat center / cover;
+}
+.block {
+    border-radius: 13px;
+    position: relative;
+}
+.menu {
+    grid-area: menu;
+    max-width: 1229px;
+    min-height: 63px;
+}
+.diagram {
+    grid-area: diagram;
+    max-width: 410px;
+    min-width: 380px;
+    min-height: 471px;
+}
+.news {
+    grid-area: news;
+    max-width: 410px;
+    min-width: 380px;
+    min-height: 281px;
+    background: $white-color;
+}
+.account {
+    grid-area: account;
+    max-width: 349px;
+    min-width: 320px;
+    min-height: 471px;
+}
+.upload {
+    grid-area: upload;
+    max-width: 349px;
+    min-width: 320px;
+    min-height: 281px;
+    background-color: $background_color;
+;
+}
+.subscribe {
+    grid-area: subscribe;
+    max-width: 370px;
+    min-height: 159px;
+    background-color: $background_color;
+}
+.signin {
+    grid-area: signin;
+    max-width: 370px;
+    min-height: 317px;
+    overflow: hidden;
+    background-color: $white-color;
+}
+.friends {
+    grid-area: friends;
+    max-width: 370px;
+    min-height: 224px;
+    background-color: $white-color;
+    overflow: hidden;
+}
+/* sm (>=576 и <=767) */
+@media (max-width: 806px) {
+    .wrapper {
+        width: 100%;
+        min-height: 2843px;
+        grid-template-columns: 410px;
+        grid-template-rows: 189px 471px 281px 471px 281px 159px 317px 224px;
+        grid-template-areas:
+                "menu"
+                "diagram"
+                "news"
+                "account"
+                "upload"
+                "subscribe"
+                "signin"
+                "friends";
+        grid-column-gap: 3%;
+    }
+    .menu__item {
+        height: 63px;
+        width: 50%;
+    }
+    .menu__item:first-child:hover {
+        border-bottom-left-radius: 0;
+    }
+    .menu__item:nth-child(2):hover {
+        border-top-right-radius: 12px;
+    }
+    .menu__search {
+        position: static;
+        margin-top: 10px;
+        width: 45%;
+    }
+}
+/* lg (>=992 и <=1199) */
+@media (min-width: 805px) and (max-width: 1229px) {
+    .wrapper {
+        width: 100%;
+        min-height: 1928px;
+        grid-template-columns: 410px 349px;
+        grid-template-rows: 126px 471px 281px 159px 317px 224px;
+        grid-template-areas:
+                "menu menu"
+                "diagram account"
+                "news upload"
+                "subscribe . "
+                "signin . "
+                "friends . ";
+        grid-column-gap: 3%;
+    }
+    .menu__item {
+        height: 63px;
+        width: 25%;
+    }
+    .menu__item:first-child:hover {
+        border-bottom-left-radius: 0;
+    }
+    .menu__item:nth-child(4):hover {
+        border-top-right-radius: 12px;
+    }
+    .menu__search {
+        position: static;
+        margin-top: 10px;
+        width: 23%;
+    }
+}
+/* xl (>=1200) */
+@media (min-width: 1230px) {
+    .wrapper {
+        max-width: 1429px;
+        min-height: 1015px;
+        grid-template-columns: 410px 349px 370px;;
+        grid-template-rows: 63px 159px 262px 7px 224px;
+        grid-template-areas:
+                "menu menu menu"
+                "diagram account subscribe"
+                "diagram account signin"
+                "news upload ."
+                "news upload friends ";
+        grid-column-gap: 3.4%;
+    }
+}
+
+
+
+
+
+

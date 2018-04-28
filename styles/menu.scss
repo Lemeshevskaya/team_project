@@ -1,0 +1,150 @@
+.menu {
+  background: $background_color;
+  border-radius: inherit;
+  position:relative;
+  width:100%;
+  height: 100%;
+  float: left;
+}
+.menu:first-child:hover {
+  border-top-left-radius: 13px;
+  border-bottom-left-radius: 13px;
+}
+.menu__item {
+  float: left;
+  width: 170px;
+  height: 100%;
+  text-decoration: none;
+  color:#17c4bb;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  padding-left: 77px;
+  position: relative;
+}
+.menu__item:first-child:hover {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+.menu__item:hover {
+  background:#17c4bb;
+  text-decoration: none;
+  color: $white-color;
+  transition: background .3s ease-in-out, color .3s ease-in-out;
+  -moz-transition: background .3s ease-in-out, color .3s ease-in-out;
+  -webkit-transition: background .3s ease-in-out, color .3s ease-in-out;
+}
+.menu__item:before {
+  content: '';
+  position: absolute;
+  width: 39px;
+  height: 39px;
+  background: url(../img/account/activity/picSpryt.png);
+  cursor: pointer;
+  left: 31px;
+  top: 14px;
+}
+.menu__item_message:before {
+  background-position: -274px -19px;
+}
+.menu__item_message:hover:before {
+  background-position: -325px -19px;
+}
+.menu__item_favorite:before {
+  background-position: -561px -19px;;
+}
+.menu__item_favorite:hover:before {
+  background-position: -613px -19px;
+}
+.menu__item_comment:before {
+  background-position: -466px -18.8px;;
+}
+.menu__item_comment:hover:before {
+  background-position: -515px -19px;
+}
+.menu__item_setting:before {
+  background-position: -371px -18.8px;;
+}
+.menu__item_setting:hover:before {
+  background-position: -416px -19px;
+}
+.menu__search {
+  position: absolute;
+  float: left;
+  background: url("../img/menu/search/magnifier.png") no-repeat right / 12%, #485a76;
+  margin-left: 10px;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+  border:none;
+  outline:none;
+  width: 20%;
+  height: 42px;
+  top: calc(50% - 21px);
+}
+.menu__search:focus {
+  background:$white-color;
+  transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+}
+.menu__item_people {
+  float: right;
+  width: 205px;
+  height: 100%;
+  position: relative;
+}
+.menu__item_people_position {
+  height: 100%;
+  padding-right: 30px;
+}
+.menu__item_people_description {
+  text-decoration: none;
+  color:#485a76;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  float: right;
+  width: 100%;
+  height: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.menu__item_people_description:hover {
+  color:#17c4bb;
+  background: $background_color;
+  border-radius: 12px;
+  transition: color .3s linear, background .3s linear;
+}
+.menu__item_dropdown {
+  width: 100%;
+  border: none;
+  padding: 0;
+  border-radius: 12px;
+}
+.menu__item_people_description:before {
+  content: '';
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1.5px solid #495b76;
+  left: 10px;
+}
+.menu__item_people_description0:before {
+  background: url("../img/account/pictures/EmilyBlunt1.jpg") no-repeat center / cover;
+}
+.menu__item_people_description1:before {
+  background: url("../img/menu/item/simonbaker.jpg") no-repeat center / cover;
+}
+.menu__item_people_description2:before {
+  background: url("../img/menu/item/oliviawilde.jpg") no-repeat center / cover;
+}
+.menu__item_people_description3:before {
+  background: url("../img/menu/item/AnneHathaway.jpg") no-repeat center / cover;
+}
+.active1 {
+  background:linear-gradient(to right, transparent, rgba(255, 255, 255, 0.4));
+  border-right: 2px solid #17c4bb;
+}
