@@ -824,7 +824,7 @@ table {
     width: 100%;
     min-height: 2843px;
     grid-template-columns: 410px;
-    grid-template-rows: 189px 471px 281px 471px 281px 159px 317px 224px;
+    grid-template-rows: 189px 471px 281px 471px 371px 371px 317px 224px;
     grid-template-areas: "menu" "diagram" "news" "account" "upload" "subscribe" "signin" "friends";
     grid-column-gap: 3%; }
   .menu__item {

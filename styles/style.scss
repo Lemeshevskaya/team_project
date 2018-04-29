@@ -3,11 +3,11 @@ $light-blue: #17c4bb;
 $background_color: #2d3e58;
 $dark-blue: #485a76;
 
+@import "reset";
 @import "account.scss";
 @import "friends.scss";
 @import "menu.scss";
 @import "news.scss";
-@import "reset";
 @import "settings.scss";
 @import "singin.scss";
 @import "subacribe.scss";
